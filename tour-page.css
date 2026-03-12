@@ -398,6 +398,44 @@
     }
 }
 
+/* Адаптивность для маленьких экранов (менее 393px) */
+@media (max-width: 392px) {
+    .btn-back {
+        top: 180px !important;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .tour-details {
+        padding: 260px 0 20px;
+    }
+
+    .tour-hero {
+        height: 280px;
+    }
+
+    .tour-hero-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .tour-hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .header-content {
+        gap: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .contact-link {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+}
+
 /* Адаптивность для маленьких экранов */
 @media (max-width: 480px) {
     .tour-hero {
