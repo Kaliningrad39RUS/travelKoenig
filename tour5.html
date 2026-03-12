@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Гастрономическое путешествие по области — дегустация местных продуктов и посещение замков">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0984e3">
+    <title>Гастрономическое путешествие по области | Прогулки по Калининграду</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tour-page.css">
+    <style>
+        body {
+            background: #1a1a2e;
+            background-image: url('images/51.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+            background-attachment: scroll;
+            -webkit-background-size: 100% auto;
+            -webkit-background-attachment: scroll;
+            min-height: 100vh;
+        }
+        .tour-hero {
+            background: transparent;
+            min-height: 500px;
+            padding-top: 20px;
+        }
+        .tour-hero-overlay { display: none; }
+        .tour-hero-content {
+            background: transparent;
+            padding: 40px 20px;
+        }
+        .tour-hero-content h1,
+        .tour-hero-content p {
+            text-shadow: 0 0 25px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.9);
+            -webkit-text-stroke: 1px rgba(0,0,0,0.7);
+            paint-order: stroke fill;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с контактами -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Остались вопросы? Будем рады помочь!</h1>
+            </div>
+            <div class="contacts">
+                <a href="tel:+79914834949" class="contact-link phone">
+                    <span class="icon">📞</span>
+                    <span>+7 991 483-49-49</span>
+                </a>
+                <a href="https://t.me/TravelKoenig" class="contact-link telegram" target="_blank" rel="noopener">
+                    <span class="icon">✈️</span>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOI0Q3riG5p1h0fvbXR7h8BfbMCIhZy8dtgltUKm7D0QrIpbKLQ" class="contact-link max" target="_blank" rel="noopener">
+                    <span class="icon">💬</span>
+                    <span>Max</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="btn-back">← Назад к турам</a>
+
+    <!-- Заголовок тура -->
+    <section class="tour-hero">
+        <div class="tour-hero-content">
+            <h1>Гастрономическое путешествие по области</h1>
+            <p>Маршрут для гурманов и любителей истории</p>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <section class="tour-details">
+        <div class="container">
+            <div class="tour-info-grid">
+                <div class="tour-description">
+                    <h2>Описание путешествия</h2>
+                    <p>Маршрут для гурманов и любителей истории, который сочетает знакомство с достопримечательностями региона и дегустацию местных продуктов. Вы попробуете сыры, пиво и другие деликатесы, а также увидите старинные замки и монастыри.</p>
+
+                    <h3>Что вас ждёт:</h3>
+                    <ul class="highlights">
+                        <li><strong>🏰 Гурьевск (Нойхаузен):</strong> осмотр замка Нойхаузен, памятника средневековой архитектуры.</li>
+                        <li><strong>🏛️ Гвардейск (Тапиау):</strong> прогулка по историческому центру и осмотр замка Тапиау.</li>
+                        <li><strong>🍽️ Талпаки:</strong> обед в месте, известном своими традиционными блюдами.</li>
+                        <li><strong>🧀 Неман:</strong> посещение сыроварни, где производят местные сыры. Дегустация и возможность приобрести продукцию.</li>
+                        <li><strong>🌉 Советск:</strong> прогулка по городу и осмотр знаменитого моста Королевы Луизы.</li>
+                        <li><strong>⛪ Славск:</strong> посещение женского монастыря, места духовной тишины и красоты.</li>
+                        <li><strong>🍺 Полесск:</strong> экскурсия на пивоварню с дегустацией местного пива.</li>
+                        <li><strong>🗼 Маяк в Заливино:</strong> завершение путешествия у живописного маяка на берегу Куршского залива.</li>
+                    </ul>
+
+                    <div class="tour-info-block">
+                        <div class="info-item">
+                            <span class="info-icon">⏱️</span>
+                            <div class="info-content">
+                                <h4>Время путешествия</h4>
+                                <p>от 8ч до 10ч</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-gallery">
+                        <h3>Фотографии маршрута</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item"><img src="images/51.jpg" alt="Гастрономический тур 1" loading="lazy" onclick="openModal(0)"></div>
+                            <div class="gallery-item"><img src="images/52.jpg" alt="Гастрономический тур 2" loading="lazy" onclick="openModal(1)"></div>
+                            <div class="gallery-item"><img src="images/53.jpg" alt="Гастрономический тур 3" loading="lazy" onclick="openModal(2)"></div>
+                            <div class="gallery-item"><img src="images/54.jpg" alt="Гастрономический тур 4" loading="lazy" onclick="openModal(3)"></div>
+                            <div class="gallery-item"><img src="images/55.jpg" alt="Гастрономический тур 5" loading="lazy" onclick="openModal(4)"></div>
+                            <div class="gallery-item"><img src="images/56.jpg" alt="Гастрономический тур 6" loading="lazy" onclick="openModal(5)"></div>
+                        </div>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div id="imageModal" class="modal" onclick="closeModal()">
+                        <span class="modal-close" onclick="closeModal(); event.stopPropagation();">&times;</span>
+                        <button class="modal-prev" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+                        <img class="modal-content" id="modalImage" onclick="event.stopPropagation();">
+                        <button class="modal-next" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const images = ['images/51.jpg', 'images/52.jpg', 'images/53.jpg', 'images/54.jpg', 'images/55.jpg', 'images/56.jpg'];
+        let currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            document.getElementById('modalImage').src = images[currentIndex];
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            if (currentIndex >= images.length) currentIndex = 0;
+            document.getElementById('modalImage').src = images[currentIndex];
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+    </script>
+</body>
+</html>

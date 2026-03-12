@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Сердце Калининграда: история, культура и море — путешествие по главным достопримечательностям города">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0984e3">
+    <title>Сердце Калининграда: история, культура и море | Прогулки по Калининграду</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tour-page.css">
+    <style>
+        body {
+            background: #1a1a2e;
+            background-image: url('images/31.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+            background-attachment: scroll;
+            -webkit-background-size: 100% auto;
+            -webkit-background-attachment: scroll;
+            min-height: 100vh;
+        }
+        .tour-hero {
+            background: transparent;
+            min-height: 500px;
+            padding-top: 20px;
+        }
+        .tour-hero-overlay { display: none; }
+        .tour-hero-content {
+            background: transparent;
+            padding: 40px 20px;
+        }
+        .tour-hero-content h1,
+        .tour-hero-content p {
+            text-shadow: 0 0 25px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.9);
+            -webkit-text-stroke: 1px rgba(0,0,0,0.7);
+            paint-order: stroke fill;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с контактами -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Остались вопросы? Будем рады помочь!</h1>
+            </div>
+            <div class="contacts">
+                <a href="tel:+79914834949" class="contact-link phone">
+                    <span class="icon">📞</span>
+                    <span>+7 991 483-49-49</span>
+                </a>
+                <a href="https://t.me/TravelKoenig" class="contact-link telegram" target="_blank" rel="noopener">
+                    <span class="icon">✈️</span>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOI0Q3riG5p1h0fvbXR7h8BfbMCIhZy8dtgltUKm7D0QrIpbKLQ" class="contact-link max" target="_blank" rel="noopener">
+                    <span class="icon">💬</span>
+                    <span>Max</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="btn-back">← Назад к турам</a>
+
+    <!-- Заголовок тура -->
+    <section class="tour-hero">
+        <div class="tour-hero-content">
+            <h1>Сердце Калининграда: история, культура и море</h1>
+            <p>Полное погружение в историю и культуру Калининграда</p>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <section class="tour-details">
+        <div class="container">
+            <div class="tour-info-grid">
+                <div class="tour-description">
+                    <h2>Описание путешествия</h2>
+                    <p>Полное погружение в историю и культуру Калининграда — города с богатым прошлым и уникальной атмосферой. Вы увидите главные достопримечательности, познакомитесь с историей Кёнигсберга и ощутите дух Балтики.</p>
+
+                    <h3>Что вас ждёт:</h3>
+                    <ul class="highlights">
+                        <li><strong>🏛️ Обзорная экскурсия по Калининграду:</strong> знакомство с основными достопримечательностями города, его историей и архитектурой.</li>
+                        <li><strong>🚪 7 ворот Калининграда:</strong> осмотр исторических городских ворот, сохранившихся со времён Кёнигсберга. Посещение 1–2 ворот с возможностью зайти внутрь (например, Фридландских или Королевских ворот).</li>
+                        <li><strong>💎 Музей янтаря:</strong> единственный в России музей, посвящённый этому «солнечному камню». Коллекция включает уникальные экспонаты и изделия из янтаря.</li>
+                        <li><strong>🌊 Музей Мирового океана:</strong> крупнейший в России комплекс, посвящённый изучению океана. Вы сможете посетить научно‑исследовательские суда, подводную лодку и аквариумы.</li>
+                        <li><strong>🏰 Форт № 11:</strong> один из фортов оборонительного кольца Кёнигсберга, сохранившийся в хорошем состоянии. Экскурсия по подземным ходам и казематам.</li>
+                        <li><strong>🎹 Орган в Кафедральном соборе:</strong> возможность услышать звучание одного из лучших органов Европы в историческом здании на острове Канта.</li>
+                    </ul>
+
+                    <div class="tour-info-block">
+                        <div class="info-item">
+                            <span class="info-icon">⏱️</span>
+                            <div class="info-content">
+                                <h4>Время путешествия</h4>
+                                <p>от 4ч до 7ч</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-gallery">
+                        <h3>Фотографии маршрута</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item"><img src="images/31.jpg" alt="Калининград 1" loading="lazy" onclick="openModal(0)"></div>
+                            <div class="gallery-item"><img src="images/32.jpg" alt="Калининград 2" loading="lazy" onclick="openModal(1)"></div>
+                            <div class="gallery-item"><img src="images/33.jpg" alt="Калининград 3" loading="lazy" onclick="openModal(2)"></div>
+                            <div class="gallery-item"><img src="images/34.jpg" alt="Калининград 4" loading="lazy" onclick="openModal(3)"></div>
+                            <div class="gallery-item"><img src="images/35.jpg" alt="Калининград 5" loading="lazy" onclick="openModal(4)"></div>
+                            <div class="gallery-item"><img src="images/36.jpg" alt="Калининград 6" loading="lazy" onclick="openModal(5)"></div>
+                        </div>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div id="imageModal" class="modal" onclick="closeModal()">
+                        <span class="modal-close" onclick="closeModal(); event.stopPropagation();">&times;</span>
+                        <button class="modal-prev" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+                        <img class="modal-content" id="modalImage" onclick="event.stopPropagation();">
+                        <button class="modal-next" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const images = ['images/31.jpg', 'images/32.jpg', 'images/33.jpg', 'images/34.jpg', 'images/35.jpg', 'images/36.jpg'];
+        let currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            document.getElementById('modalImage').src = images[currentIndex];
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            if (currentIndex >= images.length) currentIndex = 0;
+            document.getElementById('modalImage').src = images[currentIndex];
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Персональное путешествие: создай свой маршрут по Калининградской области — гибкая программа под ваши предпочтения">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0984e3">
+    <title>Персональное путешествие: создай свой маршрут | Прогулки по Калининграду</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tour-page.css">
+    <style>
+        body {
+            background: #1a1a2e;
+            background-image: url('images/61.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+            background-attachment: scroll;
+            -webkit-background-size: 100% auto;
+            -webkit-background-attachment: scroll;
+            min-height: 100vh;
+        }
+        .tour-hero {
+            background: transparent;
+            min-height: 500px;
+            padding-top: 20px;
+        }
+        .tour-hero-overlay { display: none; }
+        .tour-hero-content {
+            background: transparent;
+            padding: 40px 20px;
+        }
+        .tour-hero-content h1,
+        .tour-hero-content p {
+            text-shadow: 0 0 25px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.9);
+            -webkit-text-stroke: 1px rgba(0,0,0,0.7);
+            paint-order: stroke fill;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с контактами -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Остались вопросы? Будем рады помочь!</h1>
+            </div>
+            <div class="contacts">
+                <a href="tel:+79914834949" class="contact-link phone">
+                    <span class="icon">📞</span>
+                    <span>+7 991 483-49-49</span>
+                </a>
+                <a href="https://t.me/TravelKoenig" class="contact-link telegram" target="_blank" rel="noopener">
+                    <span class="icon">✈️</span>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOI0Q3riG5p1h0fvbXR7h8BfbMCIhZy8dtgltUKm7D0QrIpbKLQ" class="contact-link max" target="_blank" rel="noopener">
+                    <span class="icon">💬</span>
+                    <span>Max</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="btn-back">← Назад к турам</a>
+
+    <!-- Заголовок тура -->
+    <section class="tour-hero">
+        <div class="tour-hero-content">
+            <h1>Персональное путешествие: создай свой маршрут</h1>
+            <p>Гибкий маршрут под ваши индивидуальные предпочтения</p>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <section class="tour-details">
+        <div class="container">
+            <div class="tour-info-grid">
+                <div class="tour-description">
+                    <h2>Описание путешествия</h2>
+                    <p>Гибкий маршрут, который адаптируется под индивидуальные предпочтения туристов. Вы выбираете интересы, а мы формируем идеальную программу с учётом ваших пожеланий, темпа и особенностей группы.</p>
+
+                    <h3>Преимущества персонального тура:</h3>
+                    <ul class="highlights">
+                        <li><strong>🎯 Индивидуальный подбор маршрута:</strong> программа под ваши интересы.</li>
+                        <li><strong>⏱️ Гибкий график:</strong> темп экскурсии выбираете вы.</li>
+                        <li><strong>👨‍👩‍👧‍👦 Учёт особенностей группы:</strong> комфортно для любого возраста.</li>
+                        <li><strong>🚗 Комфортный транспорт:</strong> современные автомобили.</li>
+                        <li><strong>💬 Персональный гид:</strong> сопровождающий на всём маршруте.</li>
+                    </ul>
+
+                    <div class="tour-info-block">
+                        <div class="info-item">
+                            <span class="info-icon">⏱️</span>
+                            <div class="info-content">
+                                <h4>Время путешествия</h4>
+                                <p>без ограничения по времени</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-gallery">
+                        <h3>Фотографии маршрута</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item"><img src="images/61.jpg" alt="Персональный тур 1" loading="lazy" onclick="openModal(0)"></div>
+                            <div class="gallery-item"><img src="images/62.jpg" alt="Персональный тур 2" loading="lazy" onclick="openModal(1)"></div>
+                            <div class="gallery-item"><img src="images/63.jpg" alt="Персональный тур 3" loading="lazy" onclick="openModal(2)"></div>
+                            <div class="gallery-item"><img src="images/64.jpg" alt="Персональный тур 4" loading="lazy" onclick="openModal(3)"></div>
+                            <div class="gallery-item"><img src="images/65.jpg" alt="Персональный тур 5" loading="lazy" onclick="openModal(4)"></div>
+                            <div class="gallery-item"><img src="images/66.jpg" alt="Персональный тур 6" loading="lazy" onclick="openModal(5)"></div>
+                        </div>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div id="imageModal" class="modal" onclick="closeModal()">
+                        <span class="modal-close" onclick="closeModal(); event.stopPropagation();">&times;</span>
+                        <button class="modal-prev" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+                        <img class="modal-content" id="modalImage" onclick="event.stopPropagation();">
+                        <button class="modal-next" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const images = ['images/61.jpg', 'images/62.jpg', 'images/63.jpg', 'images/64.jpg', 'images/65.jpg', 'images/66.jpg'];
+        let currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            document.getElementById('modalImage').src = images[currentIndex];
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            if (currentIndex >= images.length) currentIndex = 0;
+            document.getElementById('modalImage').src = images[currentIndex];
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+    </script>
+</body>
+</html>

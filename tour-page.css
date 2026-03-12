@@ -1,0 +1,562 @@
+/* Стили для страниц туров */
+.tour-hero {
+    position: relative;
+    height: 450px;
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    contain: layout style;
+}
+
+/* Кнопка назад */
+.btn-back {
+    display: inline-block;
+    background: -webkit-linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
+    background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(9, 132, 227, 0.3);
+    -webkit-box-shadow: 0 2px 10px rgba(9, 132, 227, 0.3);
+    position: fixed !important;
+    top: 80px !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+    z-index: 9999 !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.btn-back:hover {
+    background: linear-gradient(135deg, #0870c0 0%, #5fa3e6 100%);
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 4px 15px rgba(9, 132, 227, 0.4);
+}
+
+.tour-hero-overlay {
+    display: none !important;
+}
+
+.tour-hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 40px 20px;
+    max-width: 900px;
+    background: transparent !important;
+    text-align: center;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.tour-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 1), 0 0 50px rgba(0, 0, 0, 0.9);
+    -webkit-text-shadow: 0 0 25px rgba(0, 0, 0, 1), 0 0 50px rgba(0, 0, 0, 0.9);
+    line-height: 1.3;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+    paint-order: stroke fill;
+    font-weight: 800;
+}
+
+.tour-hero-content p {
+    font-size: 1.3rem;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 1), 0 0 50px rgba(0, 0, 0, 0.9);
+    -webkit-text-shadow: 0 0 25px rgba(0, 0, 0, 1), 0 0 50px rgba(0, 0, 0, 0.9);
+    -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.7);
+    paint-order: stroke fill;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tour-details {
+    padding: 120px 0 30px;
+    background: rgba(245, 245, 245, 0.6);
+}
+
+.tour-info-grid {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tour-description h2 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+.tour-description h3 {
+    font-size: 1.3rem;
+    color: #1a1a2e;
+    margin: 25px 0 15px;
+}
+
+.tour-description p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.highlights {
+    list-style: none;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(232, 236, 239, 0.3);
+}
+
+.highlights li {
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.highlights li:last-child {
+    margin-bottom: 0;
+}
+
+.highlights li strong {
+    color: #0984e3;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+}
+
+.note {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px 20px;
+    border-radius: 0 10px 10px 0;
+    color: #856404;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Инфо-блок */
+.tour-info-block {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(227, 242, 253, 0.6);
+    border-radius: 16px;
+    border: 1px solid rgba(9, 132, 227, 0.2);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.info-content h4 {
+    font-size: 1.2rem;
+    color: #0984e3;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.info-content p {
+    font-size: 1.05rem;
+    color: #2d3436;
+    margin: 0;
+}
+
+/* Галерея */
+.tour-gallery {
+    margin-top: 40px;
+}
+
+.tour-gallery h3 {
+    font-size: 1.5rem;
+    color: #1a1a2e;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    -webkit-object-fit: cover;
+    display: block;
+}
+
+/* Сайдбар */
+.tour-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.tour-card-info {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card-info h3 {
+    font-size: 1.3rem;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+.tour-card-info p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.sidebar-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.contact-btn .icon {
+    font-size: 1.3rem;
+}
+
+.contact-btn.phone {
+    background: #4fc3f7;
+    color: #1a1a2e;
+}
+
+.contact-btn.phone:hover {
+    background: #29b6f6;
+    transform: translateY(-2px);
+}
+
+.contact-btn.telegram {
+    background: #0088cc;
+    color: #fff;
+}
+
+.contact-btn.telegram:hover {
+    background: #0099e6;
+    transform: translateY(-2px);
+}
+
+.contact-btn.max {
+    background: #6c5ce7;
+    color: #fff;
+}
+
+.contact-btn.max:hover {
+    background: #7d6cec;
+    transform: translateY(-2px);
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 992px) {
+    .tour-hero {
+        height: 350px;
+    }
+
+    .tour-hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .tour-info-grid {
+        gap: 25px;
+    }
+}
+
+/* Адаптивность для кнопок на промежуточных разрешениях */
+@media (min-width: 769px) and (max-width: 920px) {
+    .btn-back {
+        top: 120px !important;
+    }
+
+    .tour-details {
+        padding-top: 180px;
+    }
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .btn-back {
+        top: 160px !important;
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .tour-details {
+        padding: 230px 0 20px;
+    }
+
+    .tour-hero {
+        height: 300px;
+    }
+
+    .tour-hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .tour-hero-content p {
+        font-size: 1rem;
+    }
+
+    .tour-info-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .tour-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .tour-description h3 {
+        font-size: 1.2rem;
+    }
+
+    .tour-description p {
+        font-size: 1rem;
+    }
+
+    .highlights {
+        padding: 15px;
+    }
+
+    .highlights li {
+        font-size: 0.95rem;
+    }
+
+    .tour-info-block {
+        padding: 20px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .info-icon {
+        font-size: 2.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 480px) {
+    .tour-hero {
+        height: 250px;
+    }
+    
+    .tour-hero-content h1 {
+        font-size: 1.3rem;
+        padding: 0 5px;
+    }
+    
+    .tour-hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .tour-details {
+        padding: 35px 0 20px;
+    }
+    
+    .tour-info-grid {
+        padding: 0;
+    }
+    
+    .tour-description h2 {
+        font-size: 1.3rem;
+    }
+    
+    .tour-description h3 {
+        font-size: 1.1rem;
+    }
+    
+    .tour-description p {
+        font-size: 0.95rem;
+    }
+    
+    .tour-card-info {
+        padding: 20px;
+    }
+    
+    .tour-card-info h3 {
+        font-size: 1.15rem;
+    }
+    
+    .contact-btn {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Адаптивность для очень маленьких экранов */
+@media (max-width: 360px) {
+    .tour-hero {
+        height: 220px;
+    }
+    
+    .tour-hero-content h1 {
+        font-size: 1.1rem;
+    }
+    
+    .tour-description h2 {
+        font-size: 1.2rem;
+    }
+    
+    .highlights li {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+}
+
+/* Модальное окно для фотографий */
+.modal {
+    display: none;
+    display: -webkit-none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: #4fc3f7;
+}
+
+.modal-prev,
+.modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.modal-prev:hover,
+.modal-next:hover {
+    background: rgba(79, 195, 247, 0.5);
+}
+
+.modal-prev {
+    left: 20px;
+}
+
+.modal-next {
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    .modal-prev,
+    .modal-next {
+        font-size: 30px;
+        padding: 15px;
+    }
+    
+    .modal-prev {
+        left: 10px;
+    }
+    
+    .modal-next {
+        right: 10px;
+    }
+    
+    .modal-close {
+        top: 15px;
+        right: 20px;
+        font-size: 35px;
+    }
+}

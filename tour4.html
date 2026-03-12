@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Затерянные уголки области: от кирх до маяков — путешествие по малоизвестным местам Калининградской области">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0984e3">
+    <title>Затерянные уголки области: от кирх до маяков | Прогулки по Калининграду</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tour-page.css">
+    <style>
+        body {
+            background: #1a1a2e;
+            background-image: url('images/41.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+            background-attachment: scroll;
+            -webkit-background-size: 100% auto;
+            -webkit-background-attachment: scroll;
+            min-height: 100vh;
+        }
+        .tour-hero {
+            background: transparent;
+            min-height: 500px;
+            padding-top: 20px;
+        }
+        .tour-hero-overlay { display: none; }
+        .tour-hero-content {
+            background: transparent;
+            padding: 40px 20px;
+        }
+        .tour-hero-content h1,
+        .tour-hero-content p {
+            text-shadow: 0 0 25px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.9);
+            -webkit-text-stroke: 1px rgba(0,0,0,0.7);
+            paint-order: stroke fill;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с контактами -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Остались вопросы? Будем рады помочь!</h1>
+            </div>
+            <div class="contacts">
+                <a href="tel:+79914834949" class="contact-link phone">
+                    <span class="icon">📞</span>
+                    <span>+7 991 483-49-49</span>
+                </a>
+                <a href="https://t.me/TravelKoenig" class="contact-link telegram" target="_blank" rel="noopener">
+                    <span class="icon">✈️</span>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOI0Q3riG5p1h0fvbXR7h8BfbMCIhZy8dtgltUKm7D0QrIpbKLQ" class="contact-link max" target="_blank" rel="noopener">
+                    <span class="icon">💬</span>
+                    <span>Max</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="btn-back">← Назад к турам</a>
+
+    <!-- Заголовок тура -->
+    <section class="tour-hero">
+        <div class="tour-hero-content">
+            <h1>Затерянные уголки области: от кирх до маяков</h1>
+            <p>Малоизвестные, но удивительные места Калининградской области</p>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <section class="tour-details">
+        <div class="container">
+            <div class="tour-info-grid">
+                <div class="tour-description">
+                    <h2>Описание путешествия</h2>
+                    <p>Путешествие по малоизвестным, но удивительным местам Калининградской области. Вы увидите старинные кирхи, гидротехнические сооружения и загадочные места с богатой историей.</p>
+
+                    <h3>Что вас ждёт:</h3>
+                    <ul class="highlights">
+                        <li><strong>⛪ Правдинск, кирха:</strong> старинная кирха XIV века, памятник архитектуры и истории.</li>
+                        <li><strong>⚡ ГЭС в Правдинске:</strong> немецкая гидроэлектростанция, построенная в начале XX века, действующая до сих пор.</li>
+                        <li><strong>🏘️ Железнодорожный:</strong> небольшой посёлок с сохранившимися немецкими постройками.</li>
+                        <li><strong>🚢 Шлюз № 4 Мазурского канала:</strong> часть заброшенного водного пути, впечатляющий инженерный объект.</li>
+                        <li><strong>🏥 Знаменск:</strong> посещение здания старой немецкой психиатрической больницы, окутанного легендами.</li>
+                        <li><strong>🗼 Маяк в Заливино:</strong> действующий маяк на берегу Куршского залива, один из немногих сохранившихся в регионе.</li>
+                        <li><strong>🌉 Советск (бывший Тильзит):</strong> город с богатой историей, где был заключён Тильзитский мир. Осмотр моста Королевы Луизы и других достопримечательностей.</li>
+                    </ul>
+
+                    <div class="tour-info-block">
+                        <div class="info-item">
+                            <span class="info-icon">⏱️</span>
+                            <div class="info-content">
+                                <h4>Время путешествия</h4>
+                                <p>от 7ч до 10ч</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-gallery">
+                        <h3>Фотографии маршрута</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item"><img src="images/41.jpg" alt="Кирхи и маяки 1" loading="lazy" onclick="openModal(0)"></div>
+                            <div class="gallery-item"><img src="images/42.jpg" alt="Кирхи и маяки 2" loading="lazy" onclick="openModal(1)"></div>
+                            <div class="gallery-item"><img src="images/43.jpg" alt="Кирхи и маяки 3" loading="lazy" onclick="openModal(2)"></div>
+                            <div class="gallery-item"><img src="images/44.jpg" alt="Кирхи и маяки 4" loading="lazy" onclick="openModal(3)"></div>
+                            <div class="gallery-item"><img src="images/45.jpg" alt="Кирхи и маяки 5" loading="lazy" onclick="openModal(4)"></div>
+                            <div class="gallery-item"><img src="images/46.jpg" alt="Кирхи и маяки 6" loading="lazy" onclick="openModal(5)"></div>
+                        </div>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div id="imageModal" class="modal" onclick="closeModal()">
+                        <span class="modal-close" onclick="closeModal(); event.stopPropagation();">&times;</span>
+                        <button class="modal-prev" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+                        <img class="modal-content" id="modalImage" onclick="event.stopPropagation();">
+                        <button class="modal-next" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const images = ['images/41.jpg', 'images/42.jpg', 'images/43.jpg', 'images/44.jpg', 'images/45.jpg', 'images/46.jpg'];
+        let currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            document.getElementById('modalImage').src = images[currentIndex];
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            if (currentIndex >= images.length) currentIndex = 0;
+            document.getElementById('modalImage').src = images[currentIndex];
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+    </script>
+</body>
+</html>

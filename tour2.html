@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Морские просторы и солнечные пляжи — путешествие по побережью Балтийского моря и курортным городам">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0984e3">
+    <title>Морские просторы и солнечные пляжи | Прогулки по Калининграду</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tour-page.css">
+    <style>
+        body {
+            background: #1a1a2e;
+            background-image: url('images/23.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+            background-attachment: scroll;
+            -webkit-background-size: 100% auto;
+            -webkit-background-attachment: scroll;
+            min-height: 100vh;
+        }
+        .tour-hero {
+            background: transparent;
+            min-height: 500px;
+            padding-top: 20px;
+        }
+        .tour-hero-overlay { display: none; }
+        .tour-hero-content {
+            background: transparent;
+            padding: 40px 20px;
+        }
+        .tour-hero-content h1,
+        .tour-hero-content p {
+            text-shadow: 0 0 25px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.9);
+            -webkit-text-stroke: 1px rgba(0,0,0,0.7);
+            paint-order: stroke fill;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с контактами -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Остались вопросы? Будем рады помочь!</h1>
+            </div>
+            <div class="contacts">
+                <a href="tel:+79914834949" class="contact-link phone">
+                    <span class="icon">📞</span>
+                    <span>+7 991 483-49-49</span>
+                </a>
+                <a href="https://t.me/TravelKoenig" class="contact-link telegram" target="_blank" rel="noopener">
+                    <span class="icon">✈️</span>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOI0Q3riG5p1h0fvbXR7h8BfbMCIhZy8dtgltUKm7D0QrIpbKLQ" class="contact-link max" target="_blank" rel="noopener">
+                    <span class="icon">💬</span>
+                    <span>Max</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="btn-back">← Назад к турам</a>
+
+    <!-- Заголовок тура -->
+    <section class="tour-hero">
+        <div class="tour-hero-content">
+            <h1>Морские просторы и солнечные пляжи</h1>
+            <p>Дыхание моря и самые западные точки России</p>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <section class="tour-details">
+        <div class="container">
+            <div class="tour-info-grid">
+                <div class="tour-description">
+                    <h2>Описание путешествия</h2>
+                    <p>Маршрут для тех, кто хочет ощутить дыхание моря, насладиться пляжным отдыхом и увидеть самые западные точки России. Вас ждут прогулки по историческим городам, живописные бухты и золотые пляжи.</p>
+
+                    <h3>Что вас ждёт:</h3>
+                    <ul class="highlights">
+                        <li><strong>🚢 Балтийск:</strong> самый западный город России. Возможность совершить прогулку на катере по акватории (по желанию) и увидеть военные корабли Балтийского флота. Прогулка по городу с осмотром достопримечательностей, включая памятник Петру I и Балтийский маяк.</li>
+                        <li><strong>💎 Янтарный:</strong> посёлок, знаменитый своими янтарными карьерами. Посещение пляжа с белым песком — одного из лучших в регионе.</li>
+                        <li><strong>🌅 Филинская бухта:</strong> живописная бухта с красивыми видами на побережье и возможностью сделать потрясающие фотографии.</li>
+                        <li><strong>🏘️ Светлогорск:</strong> курортный город на холмах с атмосферой старинного немецкого курорта Раушена. Прогулка по набережной, посещение канатной дороги и осмотр архитектурных достопримечательностей.</li>
+                    </ul>
+
+                    <div class="tour-info-block">
+                        <div class="info-item">
+                            <span class="info-icon">⏱️</span>
+                            <div class="info-content">
+                                <h4>Время путешествия</h4>
+                                <p>от 6ч до 8ч</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-gallery">
+                        <h3>Фотографии маршрута</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item"><img src="images/21.jpg" alt="Морские просторы 1" loading="lazy" onclick="openModal(0)"></div>
+                            <div class="gallery-item"><img src="images/22.jpg" alt="Морские просторы 2" loading="lazy" onclick="openModal(1)"></div>
+                            <div class="gallery-item"><img src="images/23.jpg" alt="Морские просторы 3" loading="lazy" onclick="openModal(2)"></div>
+                            <div class="gallery-item"><img src="images/24.jpg" alt="Морские просторы 4" loading="lazy" onclick="openModal(3)"></div>
+                            <div class="gallery-item"><img src="images/25.jpg" alt="Морские просторы 5" loading="lazy" onclick="openModal(4)"></div>
+                            <div class="gallery-item"><img src="images/26.jpg" alt="Морские просторы 6" loading="lazy" onclick="openModal(5)"></div>
+                            <div class="gallery-item"><img src="images/27.jpg" alt="Морские просторы 7" loading="lazy" onclick="openModal(6)"></div>
+                        </div>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div id="imageModal" class="modal" onclick="closeModal()">
+                        <span class="modal-close" onclick="closeModal(); event.stopPropagation();">&times;</span>
+                        <button class="modal-prev" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+                        <img class="modal-content" id="modalImage" onclick="event.stopPropagation();">
+                        <button class="modal-next" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const images = ['images/21.jpg', 'images/22.jpg', 'images/23.jpg', 'images/24.jpg', 'images/25.jpg', 'images/26.jpg', 'images/27.jpg'];
+        let currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            document.getElementById('modalImage').src = images[currentIndex];
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            if (currentIndex >= images.length) currentIndex = 0;
+            document.getElementById('modalImage').src = images[currentIndex];
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+    </script>
+</body>
+</html>
